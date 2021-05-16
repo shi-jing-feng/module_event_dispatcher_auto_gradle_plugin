@@ -1,0 +1,4 @@
+include ':app'
+include ':auto_gradle_plugin'
+
+rootProject.name = "module_event_dispatcher_auto_gradle_plugin"
