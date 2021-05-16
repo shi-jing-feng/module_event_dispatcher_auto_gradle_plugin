@@ -4,12 +4,17 @@ buildscript {
     repositories {
         google()
         mavenCentral()
+        maven { url 'https://jitpack.io' }
     }
     dependencies {
         classpath "com.android.tools.build:gradle:4.2.1"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
 
-        classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1'
+        // 用于上传JitPack
+        classpath "com.github.dcendents:android-maven-gradle-plugin:2.1"
+
+        // 依赖 module_event_dispatcher_auto_gradle_plugin 测试远程库是否创建成功
+        classpath "com.github.SJF20:module_event_dispatcher_auto_gradle_plugin:1.0.0"
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
@@ -19,6 +24,7 @@ allprojects {
     repositories {
         google()
         mavenCentral()
+        maven { url 'https://jitpack.io' }
     }
 }
 
