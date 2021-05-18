@@ -17,19 +17,14 @@ dependencies {
     implementation "org.javassist:javassist:3.27.0-GA"
 }
 
-// 用于上传JitPack
-apply plugin: 'com.github.dcendents.android-maven'
-// 此处格式为: com.github.Github用户名
-group='com.github.SJF20'
-
 ////// 本地依赖打包开始 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 //apply plugin: 'maven'
 //
 //ext {
 //    GENERATE_DIRECTORY = "auto_gradle_plugin"
-//    GROUP_ID = "com.shijingfeng.module_event_dispatcher"
-//    ARTICFCT_ID = "auto_gradle_plugin"
+//    GROUP_ID = "com.github.SJF20"
+//    ARTICFCT_ID = "module_event_dispatcher_auto_gradle_plugin"
 //    VERSION = "1.0.0"
 //}
 //
@@ -42,7 +37,7 @@ group='com.github.SJF20'
 //uploadArchives {
 //    repositories {
 //        mavenDeployer{
-//            repository(url: "file://" + rootDir.path + File.separator + "generate" + File.separator + GENERATE_DIRECTORY)
+//            repository(url: "file://" + rootDir.parent + File.separator + "generate" + File.separator + GENERATE_DIRECTORY)
 //            pom.project {
 //                groupId = GROUP_ID
 //                artifactId = ARTICFCT_ID
